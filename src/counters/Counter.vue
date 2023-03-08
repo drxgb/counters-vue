@@ -15,8 +15,12 @@ const counter = reactive<object>(props.counter);
 <template>
   <div class="flex justify-center gap-x-4 items-center my-4">
     <InputText v-model="counter.name" />
-    <SecondaryButton @click="counter.value--">-</SecondaryButton>
+    <SecondaryButton @click="counter.value--">
+      <font-awesome-icon icon="minus" />
+    </SecondaryButton>
     <h3 class="text-3xl">{{ counter.value }}</h3>
-    <SecondaryButton @click="counter.value++">+</SecondaryButton>
+    <SecondaryButton @click="counter.value++">
+      <font-awesome-icon icon="plus" />
+    </SecondaryButton>
   </div>
 </template>

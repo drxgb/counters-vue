@@ -9,7 +9,12 @@
     <footer class="bg-blue-600 text-right px-2 py-4">
       <p>
         &copy;
-        {{ new Date().getFullYear() }} - Made with ♥ by Dr.XGB
+        {{ new Date().getFullYear() }} - Made with
+        <font-awesome-icon
+          icon="heart"
+          class="text-red-600 font-bold text-lg"
+        />
+        by Dr.XGB
       </p>
     </footer>
   </main>
